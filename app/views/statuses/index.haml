@@ -1,0 +1,40 @@
+.starter-template
+  %status
+    .row
+      .col-md-3
+        .panel.panel-default
+          .panel-heading Webpack
+          .panel-body
+            %h3
+              %span.label.label-danger OFF
+      .col-md-3
+        .panel.panel-default
+          .panel-heading Postgres
+          .panel-body
+            %h3
+              %span.label.label-default Unknown
+      .col-md-3
+        .panel.panel-default
+          .panel-heading Sidekiq
+          .panel-body
+            %h3
+              %span.label.label-default Unknown
+      .col-md-3
+        .panel.panel-default
+          .panel-heading Elasticsearch
+          .panel-body
+            %h3
+              %span.label.label-default Unknown
+      .col-md-3
+        .panel.panel-default
+          .panel-heading Redis
+          .panel-body
+            %h3
+              %span.label.label-default Unknown
+.row
+  .col-md-12
+    %h3 Email Form
+    = simple_form_for :mail, url: mails_path do |f|
+      = f.input :email
+      = f.input :message, as: :text
+      = f.button :submit, 'Send'
