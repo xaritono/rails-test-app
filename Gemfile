@@ -27,7 +27,7 @@ gem 'sidekiq-failures'
 gem 'redis-namespace'
 
 group :development, :test do
-  # Console
+  # Console la la la
   gem 'rails_dt'
 end
 
